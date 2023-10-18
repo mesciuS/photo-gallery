@@ -1,8 +1,27 @@
 <script>
+import Navbar from "./components/Navbar.vue";
+import Footer from "./components/Footer.vue";
+export default {
+  data () {
+    return {
+      message: "wella un po' di figa qua?"
+    };
+  },
+  components: {
+    Navbar,
+    Footer,
+  },
+
+  methods: {
+
+  },
+};
 </script>
 <template>
-  <div>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae minima blanditiis, magni incidunt laudantium nulla error adipisci animi ad ut? Alias dignissimos rerum explicabo recusandae magni blanditiis id eveniet repellendus.
+  <div id="container">
+    <Navbar></Navbar>
+    {{ message }}
+    <Footer></Footer>
   </div>
 </template>
 <style scoped lang="scss">
