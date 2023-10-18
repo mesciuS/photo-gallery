@@ -1,15 +1,15 @@
 <script>
-import Navbar from "./components/Navbar.vue";
-import Footer from "./components/Footer.vue";
+import AppNavbar from "./components/AppNavbar.vue";
+import AppFooter from "./components/AppFooter.vue";
 export default {
   data () {
     return {
-      message: "wella un po' di figa qua?"
+      
     };
   },
   components: {
-    Navbar,
-    Footer,
+    AppNavbar,
+    AppFooter,
   },
 
   methods: {
@@ -19,9 +19,9 @@ export default {
 </script>
 <template>
   <div id="container">
-    <Navbar></Navbar>
-    {{ message }}
-    <Footer></Footer>
+    <AppNavbar></AppNavbar>
+    <router-view></router-view>
+    <AppFooter></AppFooter>
   </div>
 </template>
 <style scoped lang="scss">
