@@ -4,4 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
+
+#view-container {
+  width: 100%;
+  // height: calc(100vh - 156px);
+  // con il calco il footer rimane sempre visibile, non una gran scelta stilistica, così è sempre inf orndo alla pagina e si rivela scorrendo
+  height: 100vh;
+}

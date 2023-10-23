@@ -1,12 +1,12 @@
 <script>
 export default {
-    name: 'AppGallery',
+    name: 'AppProjects',
 }
 
 </script>
 <template>
     <div id="view-container">
-        <h1>gallery</h1>
+        <h1>Projects</h1>
     </div>
 </template>
 <style scoped lang="scss">
