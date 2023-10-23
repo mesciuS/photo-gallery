@@ -15,24 +15,30 @@ export default {
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <!-- <li class="nav-item">
-            <router-link class="nav-link" href="#" :to="{name: 'home'}">Home</router-link>
-          </li> -->
-          <li class="nav-item">
-            <router-link class="nav-link active" aria-current="page" href="#" :to="{name: 'gallery'}">Gallery</router-link> 
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" href="#" :to="{name: 'projects'}">Projects</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" href="#" :to="{name: 'about'}">About Me</router-link>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.ilgiardinodelreshop.it/41-stampe-d-autore-e-quadri?q=Formato-Stampa+d%27arte" target="_blank">Shop</a>
-          </li>
-        </ul>
+      <div class="d-flex justify-content-between">
+        <!-- devo mettere i break points per togliere questo div sopra quando si passa a mobile -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <!-- <li class="nav-item">
+              <router-link class="nav-link" href="#" :to="{name: 'home'}">Home</router-link>
+            </li> -->
+            <li class="nav-item">
+              <router-link class="nav-link active" aria-current="page" href="#" :to="{name: 'gallery'}">Gallery</router-link> 
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" href="#" :to="{name: 'projects'}">Projects</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" href="#" :to="{name: 'about'}">About Me</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" href="#" :to="{name: 'shop'}">Shop sito</router-link>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.ilgiardinodelreshop.it/41-stampe-d-autore-e-quadri?q=Formato-Stampa+d%27arte" target="_blank">Shop</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
