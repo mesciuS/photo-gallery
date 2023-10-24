@@ -7,12 +7,7 @@ export default {
   },
 
   mounted() {
-    // let navLinkEls = document.querySelectorAll('nav-link');
-    // navLinkEls.forEach(navLinkEl => {
-    //   navLinkEl.addEventListener('click', () => {
-    //     navLinkEl.classList.add('active');
-    //   });
-    // });
+   
   },
 };
 </script>
@@ -24,10 +19,8 @@ export default {
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="d-flex justify-content-between">
-        <!-- devo mettere i break points per togliere questo div sopra quando si passa a mobile -->
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ms-auto">
             <!-- <li class="nav-item">
               <router-link class="nav-link" href="#" :to="{name: 'home'}">Home</router-link>
             </li> -->
@@ -48,11 +41,14 @@ export default {
             </li>
           </ul>
         </div>
-      </div>
     </div>
   </nav>
 </template>
 
 <style scoped lang="scss">
-  
+  // @media screen and (max-width: 992px) {
+  //   #hidden-between {
+  //     display: none;
+  //   }
+  // }
 </style>
