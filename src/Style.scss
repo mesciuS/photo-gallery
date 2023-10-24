@@ -10,5 +10,11 @@
   width: 100%;
   // height: calc(100vh - 156px);
   // con il calco il footer rimane sempre visibile, non una gran scelta stilistica, così è sempre inf orndo alla pagina e si rivela scorrendo
-  height: 100vh;
+  height: 100%;
+  background-color: antiquewhite;
+  
+}
+
+h1 {
+  margin: 0;
 }

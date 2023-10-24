@@ -13,12 +13,12 @@ export default {
   },
 
   methods: {
-
+    
   },
 };
 </script>
 <template>
-  <div id="container">
+  <div>
     <AppNavbar></AppNavbar>
     <router-view></router-view>
     <AppFooter></AppFooter>

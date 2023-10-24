@@ -5,11 +5,20 @@ export default {
       
     };
   },
+
+  mounted() {
+    // let navLinkEls = document.querySelectorAll('nav-link');
+    // navLinkEls.forEach(navLinkEl => {
+    //   navLinkEl.addEventListener('click', () => {
+    //     navLinkEl.classList.add('active');
+    //   });
+    // });
+  },
 };
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
       <router-link class="navbar-brand" href="#" :to="{name: 'home'}">Luigi De Vivo</router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +32,7 @@ export default {
               <router-link class="nav-link" href="#" :to="{name: 'home'}">Home</router-link>
             </li> -->
             <li class="nav-item">
-              <router-link class="nav-link active" aria-current="page" href="#" :to="{name: 'gallery'}">Gallery</router-link> 
+              <router-link class="nav-link" aria-current="page" href="#" :to="{name: 'gallery'}">Gallery</router-link> 
             </li>
             <li class="nav-item">
               <router-link class="nav-link" href="#" :to="{name: 'projects'}">Projects</router-link>
