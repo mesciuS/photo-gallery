@@ -43,7 +43,11 @@ const router = createRouter({
               title: '404'
             }
         }, 
-    ]
+    ],
+    scrollBehavior() {
+        window.scrollTo(0, 0)
+    }
 });
+
 
 export {router};
