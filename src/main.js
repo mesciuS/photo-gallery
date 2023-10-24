@@ -11,8 +11,3 @@ app.use(router)
 
 app.mount('#app')
 
-// scrollBehavior () {
-//     return new Promise((resolve) => {
-//         resolve({ left: 0, top: 0})
-//     })
-// }
