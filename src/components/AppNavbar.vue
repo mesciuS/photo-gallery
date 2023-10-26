@@ -45,11 +45,6 @@ export default {
 </template>
 
 <style scoped lang="scss">
-  // @media screen and (max-width: 992px) {
-  //   #hidden-between {
-  //     display: none;
-  //   }
-  // }
   #nav-logo {
     height: 80px;
   }
