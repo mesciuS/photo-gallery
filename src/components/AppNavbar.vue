@@ -2,12 +2,38 @@
 export default {
   data() {
     return {
-      
+      navLinks: null,
+      menuToggle: null,
+      bsCollapse: null
     };
   },
 
   mounted() {
+    this.navLinks = document.querySelectorAll('.nav-item');
+    this.menuToggle = document.getElementById('navbarNav');
+    let bsCollapse;
     
+    function handleNavLinkClick() {
+      console.log('Viewport width:', window.innerWidth);
+      if (window.innerWidth <= 992) {
+        bsCollapse.toggle();
+      }
+    }
+    if (this.menuToggle) {
+      bsCollapse = new bootstrap.Collapse(this.menuToggle, { toggle: false });
+
+      this.navLinks.forEach((l) => {
+        l.addEventListener('click', handleNavLinkClick);
+      });
+    }
+  },
+  
+  methods: {
+    // handleNavLinkClick() {
+    //   if (window.innerWidth <= 992) { // Adjust the threshold as needed
+    //     this.bsCollapse.toggle();
+    //   }
+    // }
   },
 };
 </script>
