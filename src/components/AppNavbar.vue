@@ -15,15 +15,14 @@ export default {
 <template>
   <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="light">
     <div class="container-fluid">
-      <router-link class="navbar-brand" href="#" :to="{name: 'home'}">Luigi De Vivo</router-link>
+      <div>
+        <router-link class="navbar-brand" href="#" :to="{name: 'home'}"><img src="../assets/images/Adventure.png" alt=""></router-link>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <!-- <li class="nav-item">
-              <router-link class="nav-link" href="#" :to="{name: 'home'}">Home</router-link>
-            </li> -->
             <li class="nav-item">
               <router-link class="nav-link" aria-current="page" href="#" :to="{name: 'gallery'}">Gallery</router-link> 
             </li>
@@ -51,4 +50,7 @@ export default {
   //     display: none;
   //   }
   // }
+  img {
+    height: 80px;
+  }
 </style>
