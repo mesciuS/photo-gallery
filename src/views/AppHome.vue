@@ -7,7 +7,7 @@ export default {
 <template>
     <div id="view-container">
         <div class="square">
-            <h1>qui va la foto grande che cambia</h1>
+            <img src="/public/images/_W1B1708.jpg" alt="immagine copertina">
         </div>
         <div>
             <h1>sezione secondaria del sito desktop o sezione che si vede solo da visualizzazione mobile</h1>
@@ -17,7 +17,13 @@ export default {
 <style scoped lang="scss">
     .square {
         width: 100%;
-        height: 100vh;
+        // height: 100vh;
+        height: calc(100vh - 106px);
+
         background-color: aqua;
+    }
+    img {
+        width: 100%;
+        height: calc(100vh - 106px);
     }
 </style>

@@ -29,55 +29,78 @@ export default {
   },
   
   methods: {
-    // handleNavLinkClick() {
-    //   if (window.innerWidth <= 992) { // Adjust the threshold as needed
-    //     this.bsCollapse.toggle();
-    //   }
-    // }
+    
   },
 };
 </script>
 
 <template>
   <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <div>
-        <router-link class="navbar-brand" href="#" :to="{name: 'home'}"><img id="nav-logo" src="../assets/images/Adventure.png" alt=""></router-link>
+    <div class="container">
+      <div class="navbar-brand">
+        <router-link :to="{ name: 'home' }">
+          <img id="nav-logo" src="../assets/images/Adventure.png" alt="">
+        </router-link>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav nav-underline">
-            <li class="nav-item">
-              <router-link class="nav-link" aria-current="page" href="#" :to="{name: 'gallery'}">Gallery</router-link> 
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" href="#" :to="{name: 'projects'}">Projects</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" href="#" :to="{name: 'about'}">About Me</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link" href="#" :to="{name: 'shop'}">Shop sito</router-link>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.ilgiardinodelreshop.it/41-stampe-d-autore-e-quadri?q=Formato-Stampa+d%27arte" target="_blank">Shop</a>
-            </li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav nav-underline">
+          <li class="nav-item">
+            <router-link class="nav-link" aria-current="page" :to="{ name: 'gallery' }">Gallery</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" :to="{ name: 'projects' }">Projects</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" :to="{ name: 'about' }">About Me</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" :to="{ name: 'shop' }">Shop sito</router-link>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.ilgiardinodelreshop.it/41-stampe-d-autore-e-quadri?q=Formato-Stampa+d%27arte" target="_blank">Shop</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </template>
 
-<style scoped lang="scss">
-  #nav-logo {
-    height: 80px;
+<style scoped>
+#nav-logo {
+  height: 80px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    flex-direction: row-reverse;
   }
-  .navbar-collapse {
-    transition: all 1s;
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-  .navbar-toggler:focus {
-    box-shadow: none;
+
+  .navbar-nav li {
+    margin-right: 20px; /* Adjust as needed for spacing between links */
   }
+}
 </style>
