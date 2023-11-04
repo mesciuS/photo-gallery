@@ -35,11 +35,11 @@ export default {
 </script>
 
 <template>
-  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar sticky-top navbar-expand-lg bg-body-secondary">
     <div class="container">
       <div class="navbar-brand">
         <router-link :to="{ name: 'home' }">
-          <img id="nav-logo" src="../assets/images/Adventure.png" alt="">
+          <img id="nav-logo" src="../assets/logos/Adventure.png" alt="">
         </router-link>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
