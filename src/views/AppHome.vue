@@ -7,7 +7,22 @@ export default {
 <template>
     <div id="view-container">
         <div class="square">
-            <img src="../assets/images/_W1B1708.jpg" alt="immagine copertina">
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="3500">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/images/carousel/carousel_1.jpg" class="d-block w-100" alt="carousel_1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/carousel/carousel_2.jpg" class="d-block w-100" alt="carousel_2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/carousel/carousel_3.jpg" class="d-block w-100" alt="carousel_3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/carousel/carousel_4.jpg" class="d-block w-100" alt="carousel_4">
+                    </div>
+                </div>
+            </div>
         </div>
         <div>
             <h1>sezione secondaria del sito desktop o sezione che si vede solo da visualizzazione mobile</h1>
@@ -21,10 +36,6 @@ export default {
         width: 100%;
         height: calc(100vh - 106px);
         background-color: aqua;
-    }
-    img {
-        width: 100%;
-        height: auto;
     }
 
     // controllare le media breakdown
