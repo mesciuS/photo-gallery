@@ -57,10 +57,7 @@ export default {
             <router-link class="nav-link" :to="{ name: 'about' }">About Me</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="{ name: 'shop' }">Shop sito</router-link>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.ilgiardinodelreshop.it/41-stampe-d-autore-e-quadri?q=Formato-Stampa+d%27arte" target="_blank">Shop</a>
+            <router-link class="nav-link" :to="{ name: 'shop' }">Purchase</router-link>
           </li>
         </ul>
       </div>
