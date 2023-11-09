@@ -11,18 +11,42 @@ export default {
 <template>
   <footer id="footer">
     <div class="footer-square">
-      <h1>ciao</h1>
-      <h2>ciao 2</h2>
+      <div>
+        contenuto 1
+      </div>
+      <div>
+        contenuto 2
+      </div>
+      <div>
+        contenuto 3
+      </div>
     </div>
     <div class="footer-square">
-      <h1>ciao</h1>
-      <h2>ciao 2</h2>
+      <div>
+        contenuto 1
+      </div>
+      <div>
+        contenuto 2
+      </div>
+      <div>
+        contenuto 3
+      </div>
     </div>
     <div class="footer-square">
-      <h1>ciao</h1>
-      <h2>ciao 2</h2>
+      <div>
+        contenuto 1
+      </div>
+      <div>
+        contenuto 2
+      </div>
+      <div>
+        contenuto 3
+      </div>
     </div>
   </footer>
+  <div id="copyright">
+    <p>© Copyright - Luigi De Vivo - All rights reserved</p>
+  </div>
 </template>
 
 <style scoped lang="scss">
@@ -36,5 +60,23 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #919191;
+}
+#copyright {
+  padding: 5px;
+  text-align: center;
+  background-color: black;
+  color: white;
+} p {
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  #footer {
+    flex-direction: column;
+    height: 100%;
+  } .footer-square {
+    padding-bottom: 20px;
+  }
 }
 </style>
