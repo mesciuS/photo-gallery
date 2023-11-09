@@ -36,8 +36,27 @@
   // background-color: rgb(228, 211, 189);
 }
 
+.route-img {
+  height: calc(80vh - 106px);
+  background-color: beige;
+  // background: url("./assets/images/");
+} 
+.route-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
 
 // solo per levare la riga bianca data dall'h1
 h1 {
   margin: 0;
+  text-align: center;
 }
+
+h2, h3 {
+  margin: 0;
+}
+
+

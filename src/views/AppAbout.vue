@@ -5,8 +5,13 @@ export default {
 
 </script>
 <template>
-    <div id="view-container">
-        <h1>about</h1>
+    <div>
+        <div class="route-img">
+            <img id="gallery-cover" src="" alt="">
+        </div>
+        <div class="route-name">
+            <h1>ABOUT ME</h1>
+        </div>
     </div>
 </template>
 <style scoped lang="scss">

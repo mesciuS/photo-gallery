@@ -66,6 +66,9 @@ export default {
 </template>
 
 <style scoped>
+nav {
+  box-shadow: 0 0 5px grey;
+}
 #nav-logo {
   height: 80px;
 }
