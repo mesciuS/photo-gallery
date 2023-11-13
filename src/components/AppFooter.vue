@@ -11,37 +11,28 @@ export default {
 <template>
   <footer id="footer">
     <div class="footer-square">
-      <div>
-        contenuto 1
-      </div>
-      <div>
-        contenuto 2
-      </div>
-      <div>
-        contenuto 3
-      </div>
+      <h4>CONTACT</h4>
+      <ul>
+        <li>Luigi De Vivo</li>
+        <li>Via per Uggiano 182</li>
+        <li>74024 Manduria (TA), Italy</li>
+        <li>Mobile: (+39)3292648919</li>
+        <li>Email: lui.devivo5@gmail.com</li>
+      </ul>
     </div>
     <div class="footer-square">
-      <div>
-        contenuto 1
-      </div>
-      <div>
-        contenuto 2
-      </div>
-      <div>
-        contenuto 3
-      </div>
+      <h4>SOCIALS</h4>
+      <ul>
+        <li>FB</li>
+        <font-awesome-icon icon="fa-brands fa-facebook-f" />
+        <li>IG</li>
+        <font-awesome-icon icon="fa-brands fa-square-instagram" />
+      </ul>
     </div>
     <div class="footer-square">
-      <div>
-        contenuto 1
-      </div>
-      <div>
-        contenuto 2
-      </div>
-      <div>
-        contenuto 3
-      </div>
+      <h4>MEMBER OF</h4>
+      <p>AFNI: Associazione Fotografi Naturalisti Italiani</p>
+      <a href="https://www.afni.org/" target="_blank"><img id="footer-logo" src="../assets/logos/AFNI_LOGO.png" alt="AFNI"></a>
     </div>
   </footer>
   <div id="copyright">
@@ -53,14 +44,20 @@ export default {
 #footer {
   display: flex;
   justify-content: space-around;
-  height: 200px;
-  padding: 20px;
+  max-height: 600px;
+  padding: 50px;
   background-color: #333333;
 } .footer-square {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   color: #919191;
+} ul {
+  list-style: none;
+  padding: 0;
+}
+#footer-logo {
+  width: 100px;
 }
 #copyright {
   padding: 5px;

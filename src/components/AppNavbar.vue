@@ -51,12 +51,6 @@ export default {
             <router-link class="nav-link" aria-current="page" :to="{ name: 'gallery' }">Gallery</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="{ name: 'projects' }">Projects</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" :to="{ name: 'about' }">About Me</router-link>
-          </li>
-          <li class="nav-item">
             <router-link class="nav-link" :to="{ name: 'shop' }">Purchase</router-link>
           </li>
         </ul>

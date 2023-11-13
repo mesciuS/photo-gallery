@@ -24,8 +24,11 @@ export default {
                 </div>
             </div>
         </div>
-        <div id="mobile-media">
-            <h1>sezione secondaria del sito desktop o sezione che si vede solo da visualizzazione mobile</h1>
+        <div id="container-about">
+            <h2>ABOUT ME</h2>
+        </div>
+        <div id="container-news">
+            <h2>NEWS</h2>
         </div>
     </div>
 </template>
@@ -37,10 +40,6 @@ export default {
         height: calc(100vh - 106px);
         background-color: aqua;
     }
-    #mobile-media {
-        display: none;
-    }
-
     // controllare le media breakdown
     @media (max-width: 1286px) {
         #view-container {
@@ -51,9 +50,6 @@ export default {
             overflow: hidden;
             width: 100%;
             height: auto;
-        }
-        #mobile-media {
-            display: block;
         }
     }
 
