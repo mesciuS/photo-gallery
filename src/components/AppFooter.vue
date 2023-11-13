@@ -21,13 +21,14 @@ export default {
       </ul>
     </div>
     <div class="footer-square">
-      <h4>SOCIALS</h4>
-      <ul>
-        <li>FB</li>
-        <font-awesome-icon icon="fa-brands fa-facebook-f" />
-        <li>IG</li>
-        <font-awesome-icon icon="fa-brands fa-square-instagram" />
-      </ul>
+      <div class="social-link">
+        <h4>SOCIALS</h4>
+        <div class="social-wrapper">
+          <a href="" target="_blank"><font-awesome-icon icon="fa-brands fa-facebook-f" size="xl" /></a>
+          <a href="" target="_blank"><font-awesome-icon icon="fa-brands fa-instagram" size="xl" /></a>
+        </div>
+      </div>
+      <div></div>
     </div>
     <div class="footer-square">
       <h4>MEMBER OF</h4>
@@ -55,6 +56,12 @@ export default {
 } ul {
   list-style: none;
   padding: 0;
+} a {
+  color: #919191;
+}
+.social-wrapper {
+  display: flex;
+  justify-content: space-around;
 }
 #footer-logo {
   width: 100px;
