@@ -25,10 +25,22 @@ export default {
             </div>
         </div>
         <div id="container-about">
-            <h2>ABOUT ME</h2>
+            <h2 class="home-title">ABOUT ME</h2>
+            <div class="about-wrapper">
+                <div class="wrapper-text">
+                    <p>
+                        I ventured into wildlife photography driven by my profound love for animals. Capturing them is a complex and demanding task; it goes beyond merely taking shots. The goal is to portray the animal in its absolute natural state within its environment. In my photographs, the spotlight consistently belongs to the animals. Even when capturing landscapes, settings, trees, flowers, or rocks, I aim to underscore that these elements are integral to the animals' living spaces. In essence, animals are never isolated from their habitats.
+                        <br>
+                        Quality photographs play a crucial role in acquainting people with the characteristics of both environments and animals, contributing to the promotion of environmental education. This process represents our sole opportunity to engage in meaningful discussions about conservation.
+                    </p>
+                </div>
+                <div class="wrapper-img">
+                    <img src="" alt="foto profilo">
+                </div>
+            </div>
         </div>
         <div id="container-news">
-            <h2>NEWS</h2>
+            <h2 class="home-title">NEWS</h2>
         </div>
     </div>
 </template>
@@ -39,6 +51,22 @@ export default {
         width: 100%;
         height: calc(100vh - 106px);
         background-color: aqua;
+    }
+    #container-about {
+        padding: 50px;
+    } .home-title {
+        font-weight: bold;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .about-wrapper {
+        display: flex;
+    } .wrapper-text, .wrapper-img {
+        width: 50%;
+    }
+    #container-news {
+        display: none;
+        padding: 50px;
     }
     // controllare le media breakdown
     @media (max-width: 1286px) {

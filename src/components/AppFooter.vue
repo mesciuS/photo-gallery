@@ -24,8 +24,8 @@ export default {
       <div class="social-link">
         <h4>SOCIALS</h4>
         <div class="social-wrapper">
-          <a href="" target="_blank"><font-awesome-icon icon="fa-brands fa-facebook-f" size="xl" /></a>
-          <a href="" target="_blank"><font-awesome-icon icon="fa-brands fa-instagram" size="xl" /></a>
+          <a href="https://www.facebook.com/lui.devivo?fref=ts" target="_blank"><font-awesome-icon icon="fa-brands fa-facebook-f" size="xl" /></a>
+          <a href="https://www.instagram.com/lui.devivo/" target="_blank"><font-awesome-icon icon="fa-brands fa-instagram" size="xl" /></a>
         </div>
       </div>
       <div></div>
