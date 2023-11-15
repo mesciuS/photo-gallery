@@ -7,7 +7,7 @@ export default {
 <template>
     <div>
         <div class="route-img">
-            <!-- <img id="gallery-cover" src="" alt=""> -->
+            <img id="route-cover" src="../assets/images/gallery/gallery-cover2.jpg" alt="gallery-cover">
         </div>
         <div class="route-name">
             <h1>GALLERY</h1>
@@ -15,22 +15,22 @@ export default {
         <div id="gallery-wrapper" class="d-flex flex-wrap pt-0 justify-content-evenly row-gap-3">
             <div class="gallery-square">
                 <div class="gallery-square-img">
-                    <h3>tipo di foto</h3>
+                    <h3>Nature in B&W</h3>
                 </div>
             </div>
             <div class="gallery-square">
                 <div class="gallery-square-img">
-                    <h3>tipo di foto</h3>
+                    <h3>Wildlife</h3>
                 </div>
             </div>
             <div class="gallery-square">
                 <div class="gallery-square-img">
-                    <h3>tipo di foto</h3>
+                    <h3>Landscapes</h3>
                 </div>
             </div>
             <div class="gallery-square">
                 <div class="gallery-square-img">
-                    <h3>tipo di foto</h3>
+                    <h3>Arctic vibes</h3>
                 </div>
             </div>
         </div>
@@ -53,7 +53,8 @@ export default {
             align-items: center;
             height: 100%;
             transition: transform .5s;
-            background: url("https://picsum.photos/200/300");
+            background: url("../assets/images/gallery/black&white/b&w_cover.jpg");
+            background-size: cover;
         } .gallery-square-img:hover {
             transform: scale(1.1);
         }

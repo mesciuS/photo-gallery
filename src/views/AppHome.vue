@@ -35,7 +35,7 @@ export default {
                     </p>
                 </div>
                 <div class="wrapper-img">
-                    <img src="" alt="foto profilo">
+                    <img src="../assets/images/foto-profilo.jpg" alt="foto profilo">
                 </div>
             </div>
         </div>
