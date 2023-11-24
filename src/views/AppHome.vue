@@ -25,7 +25,7 @@ export default {
             </div>
         </div>
         <div id="container-about">
-            <h2 class="home-title">ABOUT ME</h2>
+            <h2 class="home-title">about me</h2>
             <div class="about-wrapper">
                 <div class="wrapper-text">
                     <p>
@@ -40,7 +40,7 @@ export default {
             </div>
         </div>
         <div id="container-news">
-            <h2 class="home-title">NEWS</h2>
+            <h2 class="home-title">news</h2>
         </div>
     </div>
 </template>

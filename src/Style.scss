@@ -48,15 +48,45 @@
   height: 20vh;
 }
 
+// GALLERY VIEW CSS
+#gallery-view-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: calc(100vh - 106px);
+}
+#gallery-view-title {
+  font-size: 3em;
+}
+#gallery-view{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1030px;
+  gap: 20px;
+} .view-img {
+  min-width: 190px;
+  min-height: 150px;
+  background-color: aqua;
+}
+
 
 // solo per levare la riga bianca data dall'h1
-h1 {
+h1, h2, h3 {
   margin: 0;
   text-align: center;
 }
 
-h2, h3 {
-  margin: 0;
+h2, h4 {
+  text-transform: uppercase;
+}
+
+h3 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
 }
 
 
