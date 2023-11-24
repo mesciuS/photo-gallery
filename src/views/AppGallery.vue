@@ -7,10 +7,10 @@ export default {
 <template>
     <div>
         <div class="route-img">
-            <img id="route-cover" src="../assets/images/gallery/gallery-cover2.jpg" alt="gallery-cover">
+            <img id="route-cover" src="../assets/images/gallery/gallery-cover.jpg" alt="gallery-cover">
         </div>
         <div class="route-name">
-            <h1>GALLERY</h1>
+            <h1>gallery</h1>
         </div>
         <div id="gallery-wrapper" class="d-flex flex-wrap pt-0 justify-content-evenly row-gap-3">
             <router-link :to="{ name: 'bnw'}">

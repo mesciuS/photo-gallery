@@ -51,7 +51,7 @@ export default {
         width: 100%;
         height: calc(100vh - 106px);
         background-color: aqua;
-    }
+    } 
     #container-about {
         padding: 50px;
     } .home-title {
