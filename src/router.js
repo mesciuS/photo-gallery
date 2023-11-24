@@ -1,8 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
 import AppHome from './views/AppHome.vue';
 import AppGallery from './views/AppGallery.vue';
-import AppAbout from './views/AppAbout.vue';
-import AppProjects from './views/AppProjects.vue';
+import AppBnW from './views/gallery-routes/AppBnW.vue';
+import AppWildlife from './views/gallery-routes/AppWildlife.vue';
+import AppLandscapes from './views/gallery-routes/AppLandscapes.vue';
+import AppArtic from './views/gallery-routes/AppArtic.vue';
 import AppShop from './views/AppShop.vue';
 import NotFound from './views/NotFound.vue';
 
@@ -21,14 +23,24 @@ const router = createRouter({
             component: AppGallery,
         },
         {
-            path: '/about',
-            name: 'about',
-            component: AppAbout,
+            path: '/nature-in-b&w',
+            name: 'bnw',
+            component: AppBnW,
         },
         {
-            path: '/projects',
-            name: 'projects',
-            component: AppProjects,
+            path: '/wildlife',
+            name: 'wildlife',
+            component: AppWildlife,
+        },
+        {
+            path: '/landscapes',
+            name: 'landscapes',
+            component: AppLandscapes,
+        },
+        {
+            path: '/artic',
+            name: 'artic',
+            component: AppArtic,
         },
         {
             path: '/shop',

@@ -13,26 +13,34 @@ export default {
             <h1>GALLERY</h1>
         </div>
         <div id="gallery-wrapper" class="d-flex flex-wrap pt-0 justify-content-evenly row-gap-3">
-            <div class="gallery-square">
-                <div class="gallery-square-img">
-                    <h3>Nature in B&W</h3>
+            <router-link :to="{ name: 'bnw'}">
+                <div class="gallery-square">
+                    <div class="gallery-square-img">
+                        <h3>Nature in B&W</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="gallery-square">
-                <div class="gallery-square-img">
-                    <h3>Wildlife</h3>
+            </router-link>
+            <router-link :to="{ name: 'wildlife'}">
+                <div class="gallery-square">
+                    <div class="gallery-square-img">
+                        <h3>Wildlife</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="gallery-square">
-                <div class="gallery-square-img">
-                    <h3>Landscapes</h3>
+            </router-link>          
+            <router-link :to="{ name: 'landscapes'}">
+                <div class="gallery-square">
+                    <div class="gallery-square-img">
+                        <h3>Landscapes</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="gallery-square">
-                <div class="gallery-square-img">
-                    <h3>Arctic vibes</h3>
+            </router-link>
+            <router-link :to="{ name: 'artic'}">
+                <div class="gallery-square">
+                    <div class="gallery-square-img">
+                        <h3>Arctic vibes</h3>
+                    </div>
                 </div>
-            </div>
+            </router-link>
         </div>
     </div>
 </template>
