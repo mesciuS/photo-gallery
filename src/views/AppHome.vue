@@ -50,19 +50,31 @@ export default {
         overflow: hidden;
         width: 100%;
         height: calc(100vh - 106px);
-        background-color: aqua;
+        box-shadow: 2px 2px 10px grey;
     } 
     #container-about {
         padding: 50px;
     } .home-title {
-        font-weight: bold;
-        padding-bottom: 30px;
-        text-align: center;
+        padding-bottom: 30px;   
     }
     .about-wrapper {
         display: flex;
     } .wrapper-text, .wrapper-img {
         width: 50%;
+    } 
+    .wrapper-text {
+        display: flex;
+        align-items: center;
+        line-height: 2.5em;
+        text-align: center;
+
+    } p {
+        font-style: italic;
+        font-size: 1.3em;
+        margin: 0;
+    }
+    .wrapper-img {
+        text-align: right;
     }
     #container-news {
         display: none;

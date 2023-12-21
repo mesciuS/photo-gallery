@@ -57,6 +57,7 @@ export default {
   list-style: none;
   padding: 0;
 } a {
+  text-align: center;
   color: #919191;
 }
 .social-wrapper {
