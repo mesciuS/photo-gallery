@@ -57,17 +57,24 @@
 }
 #gallery-view-title {
   font-size: 3em;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 #gallery-view{
   display: flex;
   flex-wrap: wrap;
-  max-width: 1030px;
+  max-width: 1200px;
   gap: 20px;
+  padding-bottom: 50px;
 } .view-img {
-  min-width: 190px;
-  min-height: 150px;
-  background-color: bisque;
+  max-width: 285px;
+  max-height: 200px;
+  transition: transform .5s;
 }
+.view-img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+} 
 
 
 // solo per levare la riga bianca data dall'h1
