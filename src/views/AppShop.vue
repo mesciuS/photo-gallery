@@ -75,7 +75,7 @@ export default {
         <div id="form-wrapper">
             <form ref="form" @submit.prevent="sendEmail">
                 <h5>Requests</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium ex cupiditate a repudiandae iste libero exercitationem vel fugiat veritatis tempore hic sapiente, nostrum itaque adipisci beatae! Ab ipsa saepe labore?</p>
+                <p>If you want to purchase any of my photos or have any questions, please fill out the form below to contact me directly.</p>
                 <div class="row">
                     <div class="col">
                         <input type="text" v-model="name" name="name" class="form-control" placeholder="Your Name" required>
