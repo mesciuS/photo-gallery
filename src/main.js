@@ -3,6 +3,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import './Style.scss'
 import {router} from './router';
+import $ from 'jquery';
 import * as bootstrap from 'bootstrap';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';

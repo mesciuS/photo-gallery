@@ -95,11 +95,11 @@
 }
 .custom-modal-footer {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   background-color: transparent;
   height: 30px;
 }
-.modal-number {
+.modal-custom-text {
   margin: 0;
   color: white;
   font-weight: 400;
