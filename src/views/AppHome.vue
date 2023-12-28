@@ -1,6 +1,12 @@
 <script>
 export default {
     name: 'AppHome',
+    mounted() {
+        new bootstrap.Carousel(document.getElementById('carouselExampleSlidesOnly'), {
+        interval: 3500,
+        pause: 'false'
+        });
+    },
 }
 
 </script>
