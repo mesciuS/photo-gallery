@@ -75,6 +75,32 @@
   transform: scale(1.1);
   cursor: pointer;
 } 
+.view-img-inner {
+  width: 285px;
+  height: 200px;
+}
+
+
+// STILE MODAL
+.custom-modal-content {
+  display: flex;
+  flex-direction: column;
+}
+.modal-img {
+  width: 1140px;
+  height: auto;
+}
+.custom-modal-footer {
+  display: flex;
+  justify-content: end;
+  background-color: transparent;
+  height: 30px;
+}
+.modal-number {
+  margin: 0;
+  color: white;
+  font-weight: 400;
+}
 
 
 // solo per levare la riga bianca data dall'h1

@@ -1,6 +1,28 @@
 <script>
+import emailjs from '@emailjs/browser';
 export default {
     name: 'AppShop',
+    data() {
+        return {
+            name: '',
+            email: '',
+            message: ''
+        }
+    },
+    methods: {
+        sendEmail() {
+            emailjs.sendForm('service_3u0vpz4', 'template_44u61fz', this.$refs.form, 'Gd2-NYPPSKC_HmMi6')
+                .then((result) => {
+            console.log('SUCCESS!', result.text);
+        }, (error) => {
+            console.log('FAILED...', error.text);
+        });
+            // Reset form field
+            this.name = ''
+            this.email = ''
+            this.message = ''
+        },
+    }
 }
 
 </script>
@@ -51,21 +73,23 @@ export default {
             </table>
         </div>
         <div id="form-wrapper">
-            <h5>Requests</h5>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium ex cupiditate a repudiandae iste libero exercitationem vel fugiat veritatis tempore hic sapiente, nostrum itaque adipisci beatae! Ab ipsa saepe labore?</p>
-            <div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Name" required>
-            </div>
-                <div class="col">
-                    <input type="email" class="form-control" placeholder="Email" required>
+            <form ref="form" @submit.prevent="sendEmail">
+                <h5>Requests</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium ex cupiditate a repudiandae iste libero exercitationem vel fugiat veritatis tempore hic sapiente, nostrum itaque adipisci beatae! Ab ipsa saepe labore?</p>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" v-model="name" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
-            </div>
-            <input type="submit" value="Submit" class="btn btn-outline-warning">
+                    <div class="col">
+                        <input type="email" v-model="email" name="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea v-model="message" name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                </div>
+                <input type="submit" value="Send" class="btn btn-outline-warning">
+            </form>
         </div>
     </div>
 </template>
