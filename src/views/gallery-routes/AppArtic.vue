@@ -31,7 +31,8 @@ export default {
                 <div class="custom-modal-content">
                     <img :src="imagePaths[selectedImageIndex]" alt="" class="modal-img">
                     <div class="custom-modal-footer">
-                        <p class="modal-number">{{ selectedImageIndex + 1 }}/{{ imagePaths.length }}</p>
+                        <p class="modal-custom-text">Copyright: Luigi De Vivo </p>
+                        <p class="modal-custom-text">{{ selectedImageIndex + 1 }}/{{ imagePaths.length }}</p>
                     </div>
                 </div>
             </div>
