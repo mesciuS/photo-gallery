@@ -97,6 +97,25 @@ export default {
             width: 100%;
             height: auto;
         }
+        .about-wrapper {
+            display: flex;
+            flex-direction: column;
+        }.wrapper-text {
+            width: auto;
+            line-height: 1.5em;
+            padding-bottom: 10px;
+        } p {
+            font-size: 1em;
+        }
+        .wrapper-img {
+            display: flex;
+            width: auto;
+            justify-content: center;
+        } img {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+        }
     }
 
 </style>
