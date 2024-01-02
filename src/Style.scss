@@ -106,7 +106,7 @@
 }
 
 
-// solo per levare la riga bianca data dall'h1
+// style generale titoli
 h1, h2, h3 {
   margin: 0;
   text-align: center;
@@ -125,3 +125,13 @@ a {
 }
 
 
+// viewport generale 
+
+@media screen and (max-width: 576px) {
+  .route-img {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: auto;
+  }
+}

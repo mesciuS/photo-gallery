@@ -87,6 +87,12 @@ export default {
         #gallery-wrapper {
             margin: 0;
         }
+        .route-img {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+        }
     }
     @media screen and (max-width: 992px) {
         #gallery-wrapper {
