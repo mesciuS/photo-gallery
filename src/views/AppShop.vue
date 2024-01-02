@@ -105,4 +105,13 @@ export default {
     } .row {
         margin-bottom: 30px;
     }
+
+    @media screen and (max-width: 576px) {
+        #table-wrapper {
+            padding: 0px 10px 10px 10px;
+        }
+        #form-wrapper {
+            padding: 10px;
+        }
+    }
 </style>

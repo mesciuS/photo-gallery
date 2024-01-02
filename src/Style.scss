@@ -134,4 +134,16 @@ a {
       width: 100%;
       height: auto;
   }
+  .route-name {
+    height: 100px;
+  }
+  #gallery-view {
+    justify-content: center;
+  } .view-img {
+      transition: none;
+    }
+    .view-img:hover {
+      transform: none;
+      cursor: auto;
+    }
 }

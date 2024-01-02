@@ -86,12 +86,10 @@ export default {
     @media screen and (max-width: 576px) {
         #gallery-wrapper {
             margin: 0;
-        }
-        .route-img {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            height: auto;
+        } .gallery-square-img {
+            transition: none;
+        } .gallery-square-img:hover {
+            transform: none;
         }
     }
     @media screen and (max-width: 992px) {
